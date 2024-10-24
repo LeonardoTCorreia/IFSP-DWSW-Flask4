@@ -1,5 +1,4 @@
-{% extends "bootstrap/base.html" %}
-
+{% extends 'bootstrap/base.html' %}
 
 {% block head %}
 {{ super() }}
@@ -10,31 +9,25 @@
 {% block title %}Flasky{% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-inverse" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle"
-                data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarNav">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">Flasky</a>
+            <a href="/" class="navbar-brand">Avaliação contínua: <b>Aula 040</b></a>
         </div>
-        <div class="navbar-collapse collapse">
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav">
-                <li><a href="/">Home</a></li>
+                <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="/user/Leonardo%20Correia/PT3026621/IFSP" class="nav-link">Identificação</a></li>
+                <li class="nav-item"><a href="/contextorequisicao/Leonardo%20Correia" class="nav-link">Contexto da requisição</a></li>
             </ul>
         </div>
     </div>
-</div>
-{% endblock %}
-
-{% block content %}
-<div class="container">
-{% block page_content %}{% endblock %}
-</div>
+</nav>
 {% endblock %}
 
 {% block scripts %}
