@@ -1,9 +1,13 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block title %}Flask{% endblock %}
-
-{% block page_content %}
-<div class="page-header">
-    <h1>Hello, {{name}}!</h1>
+{% block content %}
+<div class="container">
+    <div class="page-header">
+        <h1>Olá, {{name}}!</h1>
+    </div>
+    <div class="page_content">
+        <h2>Prontuário: {{register}}</h2>
+        <h2>Instituição: {{institution}}</h2>
+    </div>
 </div>
 {% endblock %}
